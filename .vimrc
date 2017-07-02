@@ -70,7 +70,6 @@ nnoremap gr gT
 let mapleader=","
 
 " vim airline
-set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#whitespace#enabled = 1
@@ -105,14 +104,9 @@ hi VertSplit ctermbg=NONE guibg=NONE
 " map ,/ to toggle comment
 map <leader>/ :Commentary<CR>
 
-" Ctrlp
+" FZF
 nnoremap <leader>p :Files<CR>
 nnoremap <leader>l :Tags<CR>
-" nnoremap <leader>p :CtrlP<CR>
-" nnoremap <leader>l :CtrlPTag<CR>
-" let g:ctrlp_working_path_mode = 'ra'
-" let g:ctrlp_by_filename = 1
-" let g:ctrlp_regexp = 1
 
 " Syntastic
 let g:syntastic_aggregate_errors = 1
@@ -140,11 +134,5 @@ if has('gui_running')
   set guioptions-=r
   set guioptions-=L
   set lines=999 columns=999
+  set guifont=Source\ Code\ Pro\ 12
 endif
-
-" source code pro font
-" if has("win32")
-" set guifont=Source_Code_Pro:h14:cANSI
-" else
-" set guifont=Source\ Code\ Pro\ 14
-" endif
